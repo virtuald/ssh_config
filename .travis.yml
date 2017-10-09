@@ -8,9 +8,11 @@ dist: trusty
 sudo: required
 
 before_script:
-  - wget "https://storage.googleapis.com/bazel-apt/pool/jdk1.8/b/bazel/bazel_0.5.3_amd64.deb"
-  - sudo dpkg --force-all -i bazel_0.5.3_amd64.deb
-  - sudo apt-get install moreutils -y
+  - make install-travis
 
 script:
-  - set -o pipefail && make ci
+  - make ci
+
+cache:
+  directories:
+    - $HOME/.bzrepos
