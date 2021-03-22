@@ -1,3 +1,7 @@
+**NOTE**: This is a fork of https://github.com/kevinburke/ssh_config that
+contains various fixes the author has not merged in yet. Feel free to make
+pull requests against this repo instead if you find issues!
+
 # ssh_config
 
 This is a Go parser for `ssh_config` files. Importantly, this parser attempts
@@ -71,7 +75,7 @@ the `ssh_config` manpage. Unimplemented features should be present in the
 
 Notably, the `Match` directive is currently unsupported.
 
-[issues]: https://github.com/kevinburke/ssh_config/issues
+[issues]: https://github.com/virtuald/ssh_config/issues
 
 ## Errata
 
